@@ -19,7 +19,6 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
         {
             try
             {
-                // Does not Include CollaboratorDataEntries
                 //var results = await _context.CollaboratrorTable.ToListAsync();
 
                 // Include CollaboratorDataEntries

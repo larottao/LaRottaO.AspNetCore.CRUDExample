@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaRottaO.AspNetCore.CRUDExample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cdb146f24036c4fec4176443deb0b9aa2df4fbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aae56a382a11d4327c2a65ef0da1883cb82a327c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaRottaO.AspNetCore.CRUDExample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaRottaO.AspNetCore.CRUDExample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

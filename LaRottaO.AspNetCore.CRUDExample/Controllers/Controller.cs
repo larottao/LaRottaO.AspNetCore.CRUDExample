@@ -1,6 +1,12 @@
 ﻿using LaRottaO.AspNetCore.CRUDExample.Interfaces;
 using LaRottaO.AspNetCore.CRUDExample.Models;
+using LaRottaO.AspNetCore.CRUDExample.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace LaRottaO.AspNetCore.CRUDExample.Controllers
 {
@@ -9,12 +15,36 @@ namespace LaRottaO.AspNetCore.CRUDExample.Controllers
     {
         private readonly ICollaboratorData _iCollaboratorData;
 
-        public Controller(ICollaboratorData iCollaboratorData)
+        private readonly IConfiguration _configuration;
+
+        public Controller(ICollaboratorData iCollaboratorData, IConfiguration configuration)
 
         {
             _iCollaboratorData = iCollaboratorData;
+            _configuration = configuration;
         }
 
+        //*****************************************************************//
+        //Hardcoded credentials, replace with a decent implementation
+        //*****************************************************************//
+
+        [HttpPost("LoginEndpoint")]
+        public IActionResult Login(string username = "admin", string password = "password")
+        {
+            // Simulate checking user credentials (replace this with actual authentication logic)
+            var isValidUser = username == "admin" && password == "password";
+
+            if (!isValidUser)
+            {
+                return Unauthorized("Invalid credentials");
+            }
+
+            var token = new GenerateJWTToken().generate(_configuration, username);
+
+            return Ok(new { Token = token });
+        }
+
+        [Authorize]
         [HttpGet("GetAllCollaboratorsEndpoint")]
         public async Task<IActionResult> GetAllCollaborators()
         {
@@ -40,6 +70,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Controllers
             return Ok(result.results); // 200 OK with list of entries
         }
 
+        [Authorize]
         [HttpPost("AddNewCollaboratorEndpoint")]
         public async Task<IActionResult> AddNewCollaborator(Collaborator argNewCollaborator)
         {
@@ -65,6 +96,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Controllers
             return Ok(result.collaborator); // 200 OK with created collaborator
         }
 
+        [Authorize]
         [HttpPost("AddCollaboratorDataEndpoint")]
         public async Task<IActionResult> AddCollaboratorData(CollaboratorData argCollaboratorData)
         {
