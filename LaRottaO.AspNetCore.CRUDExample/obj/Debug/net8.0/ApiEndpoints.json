@@ -1,0 +1,104 @@
+[
+  {
+    "ContainingType": "LaRottaO.AspNetCore.CRUDExample.Controllers.Controller",
+    "Method": "AddCollaboratorData",
+    "RelativePath": "AddCollaboratorDataEndpoint",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PassportNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OverTimeStart",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "OverTimeEnd",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ActivitySummary",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HadBreakfast",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HadLunch",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HadDinner",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "EntryCreationDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaRottaO.AspNetCore.CRUDExample.Controllers.Controller",
+    "Method": "AddNewCollaborator",
+    "RelativePath": "AddNewCollaboratorEndpoint",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PassportNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EntryCreationDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CollaboratorDataEntries",
+        "Type": "System.Collections.Generic.List\u00601[[LaRottaO.AspNetCore.CRUDExample.Models.CollaboratorData, LaRottaO.AspNetCore.CRUDExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaRottaO.AspNetCore.CRUDExample.Controllers.Controller",
+    "Method": "GetAllCollaborators",
+    "RelativePath": "GetAllCollaboratorsEndpoint",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

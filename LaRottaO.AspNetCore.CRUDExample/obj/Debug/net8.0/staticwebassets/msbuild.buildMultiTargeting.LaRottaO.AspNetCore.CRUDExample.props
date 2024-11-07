@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LaRottaO.AspNetCore.CRUDExample.props" />
+</Project>

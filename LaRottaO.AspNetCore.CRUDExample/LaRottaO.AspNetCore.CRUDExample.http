@@ -1,0 +1,6 @@
+@LaRottaO.AspNetCore.CRUDExample_HostAddress = http://localhost:5155
+
+GET {{LaRottaO.AspNetCore.CRUDExample_HostAddress}}/
+Accept: application/json
+
+###

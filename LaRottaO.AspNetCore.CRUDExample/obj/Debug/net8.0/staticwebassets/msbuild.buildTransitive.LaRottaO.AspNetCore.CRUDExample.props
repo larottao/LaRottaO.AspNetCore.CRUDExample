@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\LaRottaO.AspNetCore.CRUDExample.props" />
+</Project>
