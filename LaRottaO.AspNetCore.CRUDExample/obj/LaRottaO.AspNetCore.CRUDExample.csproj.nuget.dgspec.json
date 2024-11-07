@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj": {}
+    "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj": {}
   },
   "projects": {
-    "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj": {
+    "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
+        "projectUniqueName": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
         "projectName": "LaRottaO.AspNetCore.CRUDExample",
-        "projectPath": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
+        "projectPath": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
         "packagesPath": "C:\\Users\\Pantufla\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\obj\\",
+        "outputPath": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pantufla\\AppData\\Roaming\\NuGet\\NuGet.Config",

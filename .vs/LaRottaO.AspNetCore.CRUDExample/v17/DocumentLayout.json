@@ -1,18 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\",
+  "WorkspaceRootPath": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\models\\collaborator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\utils\\pbkdf2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\utils\\pbkdf2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\services\\collaboratordataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\services\\collaboratordataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\context\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\context\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\migrations\\20241106233432_mig1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\migrations\\20241106233432_mig1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\models\\collaborator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\models\\collaborator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\models\\collaboratordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\la_rotta\\c#\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\models\\collaboratordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\models\\collaboratordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|c:\\repositorios\\larottao.aspnetcore.crudexample\\larottao.aspnetcore.crudexample\\context\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3F436BE-439B-4170-A892-001AB6E7F252}|LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj|solutionrelative:larottao.aspnetcore.crudexample\\context\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,47 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CollaboratorDataService.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Services\\CollaboratorDataService.cs",
+              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Services\\CollaboratorDataService.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Services\\CollaboratorDataService.cs",
+              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Services\\CollaboratorDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:48:13.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pbkdf2.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Utils\\Pbkdf2.cs",
+              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Utils\\Pbkdf2.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Utils\\Pbkdf2.cs",
+              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Utils\\Pbkdf2.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:41:56.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LaRottaO.AspNetCore.CRUDExample",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
+              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
+              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-07T00:41:24.494Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CollaboratorData.cs",
-              "DocumentMoniker": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
-              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
-              "ToolTip": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
-              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Controllers\\Controller.cs",
+              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Controllers\\Controller.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Controllers\\Controller.cs",
+              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Controllers\\Controller.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T00:29:16.666Z",
+              "WhenOpened": "2024-11-07T00:36:42.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "GlobalVariables.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\GlobalVariables.cs",
+              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\GlobalVariables.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\GlobalVariables.cs",
+              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\GlobalVariables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:36:22.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20241106233432_mig1.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Migrations\\20241106233432_mig1.cs",
+              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Migrations\\20241106233432_mig1.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Migrations\\20241106233432_mig1.cs",
+              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Migrations\\20241106233432_mig1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:36:03.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CollaboratorData.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
+              "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
+              "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Models\\CollaboratorData.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:29:16.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Collaborator.cs",
-              "DocumentMoniker": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\Collaborator.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\Collaborator.cs",
               "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Models\\Collaborator.cs",
-              "ToolTip": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\Collaborator.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Models\\Collaborator.cs",
               "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Models\\Collaborator.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAwAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T00:28:58.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "RepositoryContext.cs",
-              "DocumentMoniker": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Context\\RepositoryContext.cs",
+              "DocumentMoniker": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Context\\RepositoryContext.cs",
               "RelativeDocumentMoniker": "LaRottaO.AspNetCore.CRUDExample\\Context\\RepositoryContext.cs",
-              "ToolTip": "C:\\Repositorios\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Context\\RepositoryContext.cs",
+              "ToolTip": "C:\\Repositorios\\LA_ROTTA\\C#\\LaRottaO.AspNetCore.CRUDExample\\LaRottaO.AspNetCore.CRUDExample\\Context\\RepositoryContext.cs",
               "RelativeToolTip": "LaRottaO.AspNetCore.CRUDExample\\Context\\RepositoryContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T00:28:54.418Z",
               "EditorCaption": ""
