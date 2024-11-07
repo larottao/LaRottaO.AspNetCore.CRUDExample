@@ -19,10 +19,12 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
         {
             try
             {
+                // Does not Include CollaboratorDataEntries
                 //var results = await _context.CollaboratrorTable.ToListAsync();
 
+                // Include CollaboratorDataEntries
                 var results = await _context.CollaboratrorTable
-                 .Include(c => c.CollaboratorDataEntries)  // Include CollaboratorDataEntries
+                 .Include(c => c.CollaboratorDataEntries)
                  .ToListAsync();
 
                 if (results == null)
@@ -39,7 +41,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             }
             catch (Exception ex)
             {
-                Log.Error(ex.ToString());
+                Log.Error(ex, ex.ToString());
                 return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, new List<Collaborator>());
             }
         }
@@ -59,7 +61,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                Log.Error(ex, ex.ToString());
                 return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, Collaborator.CreateEmpty());
             }
         }
@@ -112,7 +114,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             }
             catch (Exception ex)
             {
-                Log.Error(ex.ToString());
+                Log.Error(ex, ex.ToString());
                 return (false, 500, "Unable to create / retrieve collaborator: " + ex.ToString(), Collaborator.CreateEmpty());
             }
         }
@@ -145,7 +147,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             }
             catch (Exception ex)
             {
-                Log.Error("Unable to add data after creating / retrieving collaborator: "  + ex.ToString());
+                Log.Error(ex, "Unable to add data after creating / retrieving collaborator");
                 return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, CollaboratorData.CreateEmpty());
             }
         }
@@ -169,7 +171,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             }
             catch (Exception ex)
             {
-                Log.Error(ex.ToString());
+                Log.Error(ex, ex.ToString());
                 return (false, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, false, Collaborator.CreateEmpty());
             }
         }
@@ -193,7 +195,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             }
             catch (Exception ex)
             {
-                Log.Error(ex.ToString());
+                Log.Error(ex, ex.ToString());
                 return (false, "Unable to create new collaborator", Collaborator.CreateEmpty());
             }
         }
