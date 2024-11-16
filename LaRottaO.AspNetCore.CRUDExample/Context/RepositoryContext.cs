@@ -10,7 +10,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql(GlobalVariables.MYSQL_CONNECTION_STRING, new MySqlServerVersion(new Version(8, 0, 26)));
+            optionsBuilder.UseMySql(GlobalConstants.MYSQL_CONNECTION_STRING, new MySqlServerVersion(new Version(8, 0, 26)));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -18,7 +18,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Context
             modelBuilder.Entity<Collaborator>()
               .ToTable("collaborator_table")
               .HasMany(c => c.CollaboratorDataEntries)
-              .WithOne()  // No need to specify Collaborator property
+              .WithOne()
               .HasForeignKey(cd => cd.PassportNumber)
               .HasPrincipalKey(c => c.PassportNumber)
               .OnDelete(DeleteBehavior.Cascade);

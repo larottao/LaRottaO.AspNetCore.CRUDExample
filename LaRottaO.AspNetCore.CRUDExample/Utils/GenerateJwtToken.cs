@@ -5,9 +5,9 @@ using System.Text;
 
 namespace LaRottaO.AspNetCore.CRUDExample.Utils
 {
-    public class GenerateJWTToken
+    public static class GenerateJwtToken
     {
-        public string generate(IConfiguration _configuration, string username)
+        public static string generate(IConfiguration _configuration, string username)
         {
             var claims = new[]
             {

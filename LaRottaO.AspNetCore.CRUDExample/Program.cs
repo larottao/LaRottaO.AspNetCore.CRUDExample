@@ -7,8 +7,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using Serilog.Sinks.SystemConsole.Themes;
-using System.Diagnostics;
 using System.Text;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -76,24 +76,69 @@ builder.Services.AddDbContext<RepositoryContext>();
 // JWT Specific code (Authentication setup)
 //*****************************************************************//
 
+/*
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
+*/
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],  // Ensure this matches the issuer in the token
-        ValidAudience = builder.Configuration["Jwt:Audience"],  // Ensure this matches the audience in the token
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))  // Ensure this matches the key used to sign the token
-    };
-});
+        // Set your issuer signing key
+        var keyBytes = Encoding.UTF8.GetBytes("YourSecretKey");
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = true
+        };
+
+        // Custom error handling for authentication and authorization
+        options.Events = new JwtBearerEvents
+        {
+            OnChallenge = async context =>
+            {
+                context.HandleResponse(); // Prevent default behavior
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                context.Response.ContentType = "application/json";
+
+                var result = JsonSerializer.Serialize(new
+                {
+                    message = GlobalConstants.MESSAGE_ENDPOINT_LOGIN_FIRST
+                });
+
+                await context.Response.WriteAsync(result);
+            },
+            OnForbidden = async context =>
+            {
+                context.Response.StatusCode = StatusCodes.Status403Forbidden;
+                context.Response.ContentType = "application/json";
+
+                var result = JsonSerializer.Serialize(new
+                {
+                    message = GlobalConstants.MESSAGE_ENDPOINT_UNAUTHORIZED
+                });
+
+                await context.Response.WriteAsync(result);
+            }
+        };
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],  // Ensure this matches the issuer in the token
+            ValidAudience = builder.Configuration["Jwt:Audience"],  // Ensure this matches the audience in the token
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))  // Ensure this matches the key used to sign the token
+        };
+    });
 
 //*****************************************************************//
 // Add Logging (Serilog configuration)
@@ -103,7 +148,7 @@ Log.Logger = new LoggerConfiguration()
            .MinimumLevel.Verbose()
            .WriteTo.Console(theme: AnsiConsoleTheme.Literate, applyThemeToRedirectedOutput: true)
            .WriteTo.Debug()
-           .WriteTo.File(GlobalVariables.PATH_LOGGING_FILE, rollingInterval: RollingInterval.Day)
+           .WriteTo.File(GlobalConstants.PATH_LOGGING_FILE, rollingInterval: RollingInterval.Day)
            .CreateLogger();
 
 //*****************************************************************//

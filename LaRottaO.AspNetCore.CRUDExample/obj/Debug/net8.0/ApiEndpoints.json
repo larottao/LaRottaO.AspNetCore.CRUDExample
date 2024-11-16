@@ -93,18 +93,8 @@
   },
   {
     "ContainingType": "LaRottaO.AspNetCore.CRUDExample.Controllers.Controller",
-    "Method": "GetAllCollaborators",
-    "RelativePath": "GetAllCollaboratorsEndpoint",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LaRottaO.AspNetCore.CRUDExample.Controllers.Controller",
-    "Method": "Login",
-    "RelativePath": "LoginEndpoint",
+    "Method": "AuthorizeWithRole",
+    "RelativePath": "AuthorizeWithRole",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -118,8 +108,23 @@
         "Name": "password",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaRottaO.AspNetCore.CRUDExample.Controllers.Controller",
+    "Method": "GetAllCollaborators",
+    "RelativePath": "GetAllCollaboratorsEndpoint",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

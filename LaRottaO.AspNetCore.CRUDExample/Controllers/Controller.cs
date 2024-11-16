@@ -25,13 +25,20 @@ namespace LaRottaO.AspNetCore.CRUDExample.Controllers
         }
 
         //*****************************************************************//
-        //Hardcoded credentials, replace with a decent implementation
+        //Hardcoded credentials for example purposes only, replace with
+        //a decent implementation. Included is a PBKDF2 hashing code you
+        //can use for this purpose
         //*****************************************************************//
 
-        [HttpPost("LoginEndpoint")]
-        public IActionResult Login(string username = "admin", string password = "password")
+        [HttpPost("AuthorizeWithRole")]
+        public IActionResult AuthorizeWithRole(string username = "admin", string password = "password", string role = "Admin")
         {
-            // Simulate checking user credentials (replace this with actual authentication logic)
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Validate username and password (replace with actual authentication logic)
             var isValidUser = username == "admin" && password == "password";
 
             if (!isValidUser)
@@ -39,12 +46,45 @@ namespace LaRottaO.AspNetCore.CRUDExample.Controllers
                 return Unauthorized("Invalid credentials");
             }
 
-            var token = new GenerateJWTToken().generate(_configuration, username);
+            // Validate role (replace with your role validation logic if needed)
+            var validRoles = new[] { "Admin", "User", "Manager" }; // Replace with your roles
+            if (!validRoles.Contains(role))
+            {
+                return BadRequest("Invalid role");
+            }
 
+            // Generate the JWT token
+            var token = GenerateToken(username, role);
             return Ok(new { Token = token });
         }
 
-        [Authorize]
+        private string GenerateToken(string username, string role)
+        {
+
+            //*****************************************************************//
+            //Attached key is an example, change it and do not reveal it
+            //*****************************************************************//
+         
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+            new Claim(ClaimTypes.Name, username),
+            new Claim(ClaimTypes.Role, role) // Add the role claim
+        };
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.Now.AddHours(1),
+                signingCredentials: credentials);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        [Authorize(Roles = "User")]
         [HttpGet("GetAllCollaboratorsEndpoint")]
         public async Task<IActionResult> GetAllCollaborators()
         {
@@ -70,7 +110,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Controllers
             return Ok(result.results); // 200 OK with list of entries
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpPost("AddNewCollaboratorEndpoint")]
         public async Task<IActionResult> AddNewCollaborator(Collaborator argNewCollaborator)
         {
@@ -96,7 +136,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Controllers
             return Ok(result.collaborator); // 200 OK with created collaborator
         }
 
-        [Authorize]
+        [Authorize(Roles = "User")]
         [HttpPost("AddCollaboratorDataEndpoint")]
         public async Task<IActionResult> AddCollaboratorData(CollaboratorData argCollaboratorData)
         {

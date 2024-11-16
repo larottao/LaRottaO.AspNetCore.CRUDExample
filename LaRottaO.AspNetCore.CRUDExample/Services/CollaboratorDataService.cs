@@ -28,7 +28,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
 
                 if (results == null)
                 {
-                    return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, new List<Collaborator>());
+                    return (false, 500, GlobalConstants.MESSAGE_ERROR_IN_DATABASE, new List<Collaborator>());
                 }
 
                 if (results.Count == 0)
@@ -41,7 +41,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             catch (Exception ex)
             {
                 Log.Error(ex, ex.ToString());
-                return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, new List<Collaborator>());
+                return (false, 500, GlobalConstants.MESSAGE_ERROR_IN_DATABASE, new List<Collaborator>());
             }
         }
 
@@ -61,7 +61,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             catch (Exception ex)
             {
                 Log.Error(ex, ex.ToString());
-                return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, Collaborator.CreateEmpty());
+                return (false, 500, GlobalConstants.MESSAGE_ERROR_IN_DATABASE, Collaborator.CreateEmpty());
             }
         }
 
@@ -94,7 +94,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
 
                 if (!colabExistsResult.success)
                 {
-                    return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, Collaborator.CreateEmpty());
+                    return (false, 500, GlobalConstants.MESSAGE_ERROR_IN_DATABASE, Collaborator.CreateEmpty());
                 }
 
                 if (colabExistsResult.collabExists)
@@ -126,7 +126,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
 
                 if (!colabExistsResult.success)
                 {
-                    return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, CollaboratorData.CreateEmpty());
+                    return (false, 500, GlobalConstants.MESSAGE_ERROR_IN_DATABASE, CollaboratorData.CreateEmpty());
                 }
 
                 if (!colabExistsResult.collabExists)
@@ -147,7 +147,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             catch (Exception ex)
             {
                 Log.Error(ex, "Unable to add data after creating / retrieving collaborator");
-                return (false, 500, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, CollaboratorData.CreateEmpty());
+                return (false, 500, GlobalConstants.MESSAGE_ERROR_IN_DATABASE, CollaboratorData.CreateEmpty());
             }
         }
 
@@ -171,7 +171,7 @@ namespace LaRottaO.AspNetCore.CRUDExample.Services
             catch (Exception ex)
             {
                 Log.Error(ex, ex.ToString());
-                return (false, GlobalVariables.MESSAGE_ERROR_IN_DATABASE, false, Collaborator.CreateEmpty());
+                return (false, GlobalConstants.MESSAGE_ERROR_IN_DATABASE, false, Collaborator.CreateEmpty());
             }
         }
 
